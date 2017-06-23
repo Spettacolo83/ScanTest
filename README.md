@@ -1,5 +1,5 @@
 # ScanTest
-Scanner Test for Music Magpie. The user can scan a barcode or insert it manually. The information will be retrieved from UPC Item DB and displayed on screen.
+Scanner Test for Music Magpie. The user could scan a barcode or insert it manually. The information will be retrieved from UPC Item DB and displayed on screen.
 
 ## UPC Item DB
 [UPC Item DB website](http://www.upcitemdb.com)
