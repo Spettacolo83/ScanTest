@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ScanTest</string>
+    <string name="title_app">Barcode Scanner</string>
+    <string name="insertbarcode"><font size="16">Insert barcode manually</font></string>
+    <string name="barcode_should_filled">Please introduce a valid barcode!</string>
+    <string name="wait">Please wait...</string>
+    <string name="error_get_info">Error getting barcode information:</string>
+    <string name="error_no_barcode">No information for this barcode or wrong barcode!</string>
+    <string name="error_json">Error getting barcode information</string>
+    <string name="title">TITLE</string>
+    <string name="brand">BRAND</string>
+    <string name="serialnum">SERIAL NUMBER</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="deleteitems">Are you sure to delete all items in the list?</string>
+    <string name="delete">Delete items</string>
+    <string name="itemexists">Item already scanned!</string>
+    <string name="noitems">No items in the list. Please scan or insert manually.</string>
+    <string name="nodelete">The list is empty. No items to delete.</string>
+    <string name="moreinfo">More information</string>
+    <string name="scanbarcode">Scan barcode</string>
+    <string name="getdetails">Get details</string>
+</resources>

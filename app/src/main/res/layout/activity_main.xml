@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="it.stefanorussello.scantest.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:focusableInTouchMode="true"
+        android:animateLayoutChanges="false"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/btnScan"
+            android:background="@drawable/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/scan"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="5dp"
+            android:text="@string/scanbarcode"
+            android:textColor="@color/white"
+            android:onClick="startScanner" />
+
+        <EditText
+            android:id="@+id/txtBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:hint="@string/insertbarcode"
+            android:gravity="center"
+            android:background="@drawable/layout_bordertext" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:background="@drawable/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:drawableLeft="@drawable/ic_search"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="5dp"
+            android:text="@string/getdetails"
+            android:textColor="@color/white"
+            android:onClick="getInfoButton" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutList"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/layout_list"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/txtNoItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/noitems"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnPanel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_open"
+            android:onClick="togglePanel"
+            />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_clear"
+            android:onClick="clearList"
+            />
+
+        <ListView
+            android:id="@+id/listItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:dividerHeight="0dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/music_magpie_logo"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>
